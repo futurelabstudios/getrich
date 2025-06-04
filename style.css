@@ -716,6 +716,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: 
+    /* 50+ white stars, varied opacities */
     radial-gradient(2px 2px at 5% 10%, #fff, transparent),
     radial-gradient(1px 1px at 10% 90%, #fff, transparent),
     radial-gradient(2px 2px at 15% 30%, #fff, transparent),
@@ -763,7 +764,45 @@ body {
     radial-gradient(2px 2px at 70% 30%, #fff, transparent),
     radial-gradient(1px 1px at 30% 70%, #fff, transparent),
     radial-gradient(2px 2px at 55% 55%, #fff, transparent),
-    radial-gradient(1px 1px at 45% 45%, #fff, transparent);
+    radial-gradient(1px 1px at 45% 45%, #fff, transparent),
+    /* 30+ more for density */
+    radial-gradient(1.5px 1.5px at 8% 18%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 18% 88%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 28% 38%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 38% 78%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 48% 58%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 58% 98%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 68% 28%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 78% 68%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 88% 48%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 98% 78%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 13% 53%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 23% 73%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 33% 93%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 43% 13%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 53% 33%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 63% 53%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 73% 73%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 83% 93%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 93% 13%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 17% 27%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 27% 47%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 37% 67%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 47% 87%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 57% 7%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 67% 27%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 77% 47%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 87% 67%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 97% 87%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 12% 92%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 22% 12%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 32% 32%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 42% 52%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 52% 72%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 62% 92%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 72% 12%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 82% 32%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 92% 52%, #fff, transparent);
   background-size: 
     400px 400px, 600px 600px, 800px 800px, 1000px 1000px, 1200px 1200px,
     500px 500px, 700px 700px, 900px 900px, 1100px 1100px, 1300px 1300px,
@@ -1250,12 +1289,8 @@ body {
   margin-bottom: var(--space-32);
   background: none;
   color: #fff;
-  text-shadow:
-    0 0 16px #fff,
-    0 0 32px #e0e0e0,
-    0 0 64px #bfc9d1,
-    0 0 96px #bfc9d1;
-  animation: fadeInUp 1s ease-out, silverPulse 3s ease-in-out infinite;
+  text-shadow: none;
+  animation: fadeInUp 1s ease-out;
   position: relative;
   z-index: 10;
 }
@@ -1505,10 +1540,8 @@ body {
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: var(--space-32);
-  background: linear-gradient(45deg, var(--color-cosmic-purple), var(--color-cosmic-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  color: #fff;
 }
 
 .final-message__content {
